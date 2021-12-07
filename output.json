@@ -3975,33 +3975,30 @@
         },
         "2073": {
           "name": "조끼",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "라운드넥;브이넥;버튼;지퍼" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "material", "value": "패딩;니트;기타" },
-            { "key": "material_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+          "attributes": [
+            {
+              "key": "detail",
+              "values": ["라운드넥", "브이넥", "버튼", "지퍼"]
+            },
+            { "key": "material", "values": ["패딩", "니트", "기타"] }
+          ]
         },
         "2074": {
           "name": "가디건",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "버튼;노버튼;포켓;노포켓;버클;벨트" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "오버핏;슬림핏" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "롱가디건;숏가디건;볼레로" },
-            { "key": "length_can_choice_multiple", "value": "false" },
-            { "key": "material", "value": "캐시미어;울;린넨;기타" },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "아가일;꽈배기;체크;배색;기타" },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "긴팔;반팔" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+          "attributes": [
+            {
+              "key": "detail",
+              "values": ["버튼", "노버튼", "포켓", "노포켓", "버클", "벨트"]
+            },
+            { "key": "fit", "values": ["오버핏", "슬림핏"] },
+            { "key": "length", "values": ["롱가디건", "숏가디건", "볼레로"] },
+            { "key": "material", "values": ["캐시미어", "울", "린넨", "기타"] },
+            {
+              "key": "pattern",
+              "values": ["아가일", "꽈배기", "체크", "배색", "기타"]
+            },
+            { "key": "sleeve_length", "values": ["긴팔", "반팔"] }
+          ]
         },
         "2075": { "name": "기타", "children": [], "subcategories": {} }
       }
@@ -4240,31 +4237,54 @@
         },
         "2086": {
           "name": "블라우스/셔츠",
-          "children": [],
-          "asset_list": [
+          "attributes": [
             {
               "key": "detail",
-              "value": "뷔스티에;오프숄더;프릴;레이스;시스루;랩;벌룬;리본;노카라;와이드카라;스퀘어넥;브이넥"
+              "values": [
+                "뷔스티에",
+                "오프숄더",
+                "프릴",
+                "레이스",
+                "시스루",
+                "랩",
+                "벌룬",
+                "리본",
+                "노카라",
+                "와이드카라",
+                "스퀘어넥",
+                "브이넥"
+              ]
             },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "루즈핏;슬림핏" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "롱;베이직;크롭" },
-            { "key": "length_can_choice_multiple", "value": "false" },
+            { "key": "fit", "values": ["루즈핏", "슬림핏"] },
+            { "key": "length", "values": ["롱", "베이직", "크롭"] },
             {
               "key": "material",
-              "value": "면;린넨;폴리에스테르;실크;레이온;코듀로이;가죽;기모;기타"
+              "values": [
+                "면",
+                "린넨",
+                "폴리에스테르",
+                "실크",
+                "레이온",
+                "코듀로이",
+                "가죽",
+                "기모",
+                "기타"
+              ]
             },
-            { "key": "material_can_choice_multiple", "value": "false" },
             {
               "key": "pattern",
-              "value": "무지;체크;그래픽/레터링;플로랄;도트;스트라이프;배색"
+              "values": [
+                "무지",
+                "체크",
+                "그래픽/레터링",
+                "플로랄",
+                "도트",
+                "스트라이프",
+                "배색"
+              ]
             },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "긴팔;반팔;민소매" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+            { "key": "sleeve_length", "values": ["긴팔", "반팔", "민소매"] }
+          ]
         },
         "2087": {
           "name": "티셔츠",
@@ -4453,24 +4473,39 @@
         },
         "2088": {
           "name": "민소매/나시",
-          "children": [],
-          "asset_list": [
+          "attributes": [
             {
               "key": "detail",
-              "value": "홀터넥;뷔스티에;프릴;레이스;시스루;랩;벌룬;리본;노카라;와이드카라;스퀘어넥;브이넥"
+              "values": [
+                "홀터넥",
+                "뷔스티에",
+                "프릴",
+                "레이스",
+                "시스루",
+                "랩",
+                "벌룬",
+                "리본",
+                "노카라",
+                "와이드카라",
+                "스퀘어넥",
+                "브이넥"
+              ]
             },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "루즈핏;슬림핏" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "롱;베이직;크롭" },
-            { "key": "length_can_choice_multiple", "value": "false" },
+            { "key": "fit", "values": ["루즈핏", "슬림핏"] },
+            { "key": "length", "values": ["롱", "베이직", "크롭"] },
             {
               "key": "pattern",
-              "value": "무지;체크;그래픽/레터링;플로랄;도트;스트라이프;배색"
-            },
-            { "key": "pattern_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+              "values": [
+                "무지",
+                "체크",
+                "그래픽/레터링",
+                "플로랄",
+                "도트",
+                "스트라이프",
+                "배색"
+              ]
+            }
+          ]
         },
         "2089": {
           "name": "맨투맨/후드",
@@ -4590,123 +4625,171 @@
       "subcategories": {
         "2091": {
           "name": "청바지",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "핀턱;데미지;패치;밴딩;배색;컷팅" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
+          "attributes": [
+            {
+              "key": "detail",
+              "values": ["핀턱", "데미지", "패치", "밴딩", "배색", "컷팅"]
+            },
             {
               "key": "fit",
-              "value": "일자;스키니;부츠컷;와이드;보이프렌드;배기;조거"
+              "values": [
+                "일자",
+                "스키니",
+                "부츠컷",
+                "와이드",
+                "보이프렌드",
+                "배기",
+                "조거"
+              ]
             },
-            { "key": "fit_can_choice_multiple", "value": "false" },
             {
               "key": "length",
-              "value": "10부;앵클/9부;7부;기장 추가;기장 짧은"
+              "values": ["10부", "앵클/9부", "7부", "기장 추가", "기장 짧은"]
             },
-            { "key": "length_can_choice_multiple", "value": "false" },
-            { "key": "material", "value": "기모" },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "무지;체크;그래픽/레터링;기타" },
-            { "key": "pattern_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+            { "key": "material", "values": ["기모"] },
+            {
+              "key": "pattern",
+              "values": ["무지", "체크", "그래픽/레터링", "기타"]
+            }
+          ]
         },
         "2092": {
           "name": "정장바지/슬랙스",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "핀턱;데미지;패치;밴딩;배색;컷팅" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
+          "attributes": [
+            {
+              "key": "detail",
+              "values": ["핀턱", "데미지", "패치", "밴딩", "배색", "컷팅"]
+            },
             {
               "key": "fit",
-              "value": "일자;스키니;부츠컷;와이드;보이프렌드;배기;조거"
+              "values": [
+                "일자",
+                "스키니",
+                "부츠컷",
+                "와이드",
+                "보이프렌드",
+                "배기",
+                "조거"
+              ]
             },
-            { "key": "fit_can_choice_multiple", "value": "false" },
             {
               "key": "length",
-              "value": "10부;앵클/9부;7부;기장 추가;기장 짧은"
+              "values": ["10부", "앵클/9부", "7부", "기장 추가", "기장 짧은"]
             },
-            { "key": "length_can_choice_multiple", "value": "false" },
             {
               "key": "material",
-              "value": "데님;면;린넨;가죽;코듀로이;기모;기타"
+              "values": [
+                "데님",
+                "면",
+                "린넨",
+                "가죽",
+                "코듀로이",
+                "기모",
+                "기타"
+              ]
             },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "무지;체크;그래픽/레터링;기타" },
-            { "key": "pattern_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+            {
+              "key": "pattern",
+              "values": ["무지", "체크", "그래픽/레터링", "기타"]
+            }
+          ]
         },
         "2093": {
           "name": "캐주얼바지",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "핀턱;데미지;패치;밴딩;배색;컷팅" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
+          "attributes": [
+            {
+              "key": "detail",
+              "values": ["핀턱", "데미지", "패치", "밴딩", "배색", "컷팅"]
+            },
             {
               "key": "fit",
-              "value": "일자;스키니;부츠컷;와이드;보이프렌드;배기;조거"
+              "values": [
+                "일자",
+                "스키니",
+                "부츠컷",
+                "와이드",
+                "보이프렌드",
+                "배기",
+                "조거"
+              ]
             },
-            { "key": "fit_can_choice_multiple", "value": "false" },
             {
               "key": "length",
-              "value": "10부;앵클/9부;7부;기장 추가;기장 짧은"
+              "values": ["10부", "앵클/9부", "7부", "기장 추가", "기장 짧은"]
             },
-            { "key": "length_can_choice_multiple", "value": "false" },
             {
               "key": "material",
-              "value": "데님;면;린넨;가죽;코듀로이;기모;기타"
+              "values": [
+                "데님",
+                "면",
+                "린넨",
+                "가죽",
+                "코듀로이",
+                "기모",
+                "기타"
+              ]
             },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "무지;체크;그래픽/레터링;기타" },
-            { "key": "pattern_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+            {
+              "key": "pattern",
+              "values": ["무지", "체크", "그래픽/레터링", "기타"]
+            }
+          ]
         },
         "2094": {
           "name": "반바지",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "핀턱;데미지;패치;밴딩;배색;컷팅" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "하이웨이스트;미들웨이스트;로우웨이스트" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "숏;3부;5부" },
-            { "key": "length_can_choice_multiple", "value": "false" },
+          "attributes": [
+            {
+              "key": "detail",
+              "values": ["핀턱", "데미지", "패치", "밴딩", "배색", "컷팅"]
+            },
+            {
+              "key": "fit",
+              "values": ["하이웨이스트", "미들웨이스트", "로우웨이스트"]
+            },
+            { "key": "length", "values": ["숏", "3부", "5부"] },
             {
               "key": "material",
-              "value": "데님;면;린넨;가죽;코듀로이;기모;기타"
+              "values": [
+                "데님",
+                "면",
+                "린넨",
+                "가죽",
+                "코듀로이",
+                "기모",
+                "기타"
+              ]
             },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "무지;체크;그래픽/레터링;기타" },
-            { "key": "pattern_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+            {
+              "key": "pattern",
+              "values": ["무지", "체크", "그래픽/레터링", "기타"]
+            }
+          ]
         },
         "2095": {
           "name": "레깅스",
-          "children": [],
-          "asset_list": [
-            { "key": "fit", "value": "하이웨이스트;미들웨이스트;로우웨이스트" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
+          "attributes": [
+            {
+              "key": "fit",
+              "values": ["하이웨이스트", "미들웨이스트", "로우웨이스트"]
+            },
             {
               "key": "length",
-              "value": "10부;앵클/9부;7부;기장 추가;기장 짧은"
+              "values": ["10부", "앵클/9부", "7부", "기장 추가", "기장 짧은"]
             },
-            { "key": "length_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "무지;체크;그래픽/레터링;기타" },
-            { "key": "pattern_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+            {
+              "key": "pattern",
+              "values": ["무지", "체크", "그래픽/레터링", "기타"]
+            }
+          ]
         },
         "2096": {
           "name": "기타",
-          "children": [],
-          "asset_list": [
-            { "key": "fit", "value": "하이웨이스트;미들웨이스트;로우웨이스트" },
-            { "key": "fit_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+          "attributes": [
+            {
+              "key": "fit",
+              "values": ["하이웨이스트", "미들웨이스트", "로우웨이스트"]
+            }
+          ]
         }
       }
     },
@@ -5612,34 +5695,58 @@
         },
         "2100": {
           "name": "치마바지",
-          "children": [],
-          "asset_list": [
-            { "key": "fit", "value": "베이직;하이웨이스트" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
+          "attributes": [
+            { "key": "fit", "values": ["베이직", "하이웨이스트"] },
             {
               "key": "material",
-              "value": "면;폴리에스테르;데님;실크;가죽;니트;울;캐시미어;코듀로이;린넨;레이온;기모;기타"
+              "values": [
+                "면",
+                "폴리에스테르",
+                "데님",
+                "실크",
+                "가죽",
+                "니트",
+                "울",
+                "캐시미어",
+                "코듀로이",
+                "린넨",
+                "레이온",
+                "기모",
+                "기타"
+              ]
             },
-            { "key": "material_can_choice_multiple", "value": "false" },
             {
               "key": "pattern",
-              "value": "무지;체크;그래픽/레터링;플로랄;에스닉;도트;스트라이프;배색"
-            },
-            { "key": "pattern_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+              "values": [
+                "무지",
+                "체크",
+                "그래픽/레터링",
+                "플로랄",
+                "에스닉",
+                "도트",
+                "스트라이프",
+                "배색"
+              ]
+            }
+          ]
         },
         "2101": {
           "name": "기타",
-          "children": [],
-          "asset_list": [
+          "attributes": [
             {
               "key": "pattern",
-              "value": "무지;체크;그래픽/레터링;플로랄;에스닉;도트;스트라이프;배색"
-            },
-            { "key": "pattern_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+              "values": [
+                "무지",
+                "체크",
+                "그래픽/레터링",
+                "플로랄",
+                "에스닉",
+                "도트",
+                "스트라이프",
+                "배색"
+              ]
+            }
+          ]
         }
       }
     },
@@ -5648,108 +5755,229 @@
       "subcategories": {
         "2102": {
           "name": "롱원피스",
-          "children": [],
-          "asset_list": [
+          "attributes": [
             {
               "key": "detail",
-              "value": "카라;브이넥;라운드넥;스퀘어넥;터틀넥/폴라;홀터넥;버튼;랩;벨트;로브;트임;포켓;뷔스티에;오프숄더"
+              "values": [
+                "카라",
+                "브이넥",
+                "라운드넥",
+                "스퀘어넥",
+                "터틀넥/폴라",
+                "홀터넥",
+                "버튼",
+                "랩",
+                "벨트",
+                "로브",
+                "트임",
+                "포켓",
+                "뷔스티에",
+                "오프숄더"
+              ]
             },
-            { "key": "detail_can_choice_multiple", "value": "false" },
             {
               "key": "material",
-              "value": "면;폴리에스테르;데님;실크;가죽;니트;울;캐시미어;코듀로이;린넨;레이온;기모;기타"
+              "values": [
+                "면",
+                "폴리에스테르",
+                "데님",
+                "실크",
+                "가죽",
+                "니트",
+                "울",
+                "캐시미어",
+                "코듀로이",
+                "린넨",
+                "레이온",
+                "기모",
+                "기타"
+              ]
             },
-            { "key": "material_can_choice_multiple", "value": "false" },
             {
               "key": "pattern",
-              "value": "무지;체크;그래픽/레터링;플로랄;에스닉;도트;스트라이프;배색"
+              "values": [
+                "무지",
+                "체크",
+                "그래픽/레터링",
+                "플로랄",
+                "에스닉",
+                "도트",
+                "스트라이프",
+                "배색"
+              ]
             },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "긴팔;반팔;민소매" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+            { "key": "sleeve_length", "values": ["긴팔", "반팔", "민소매"] }
+          ]
         },
         "2103": {
           "name": "미디원피스",
-          "children": [],
-          "asset_list": [
+          "attributes": [
             {
               "key": "detail",
-              "value": "카라;브이넥;라운드넥;스퀘어넥;터틀넥/폴라;홀터넥;버튼;랩;벨트;로브;트임;포켓;뷔스티에;오프숄더"
+              "values": [
+                "카라",
+                "브이넥",
+                "라운드넥",
+                "스퀘어넥",
+                "터틀넥/폴라",
+                "홀터넥",
+                "버튼",
+                "랩",
+                "벨트",
+                "로브",
+                "트임",
+                "포켓",
+                "뷔스티에",
+                "오프숄더"
+              ]
             },
-            { "key": "detail_can_choice_multiple", "value": "false" },
             {
               "key": "material",
-              "value": "면;폴리에스테르;데님;실크;가죽;니트;울;캐시미어;코듀로이;린넨;레이온;기모;기타"
+              "values": [
+                "면",
+                "폴리에스테르",
+                "데님",
+                "실크",
+                "가죽",
+                "니트",
+                "울",
+                "캐시미어",
+                "코듀로이",
+                "린넨",
+                "레이온",
+                "기모",
+                "기타"
+              ]
             },
-            { "key": "material_can_choice_multiple", "value": "false" },
             {
               "key": "pattern",
-              "value": "무지;체크;그래픽/레터링;플로랄;에스닉;도트;스트라이프;배색"
+              "values": [
+                "무지",
+                "체크",
+                "그래픽/레터링",
+                "플로랄",
+                "에스닉",
+                "도트",
+                "스트라이프",
+                "배색"
+              ]
             },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "긴팔;반팔;민소매" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+            { "key": "sleeve_length", "values": ["긴팔", "반팔", "민소매"] }
+          ]
         },
         "2104": {
           "name": "미니원피스",
-          "children": [],
-          "asset_list": [
+          "attributes": [
             {
               "key": "detail",
-              "value": "카라;브이넥;라운드넥;스퀘어넥;터틀넥/폴라;홀터넥;버튼;랩;벨트;로브;트임;포켓;뷔스티에;오프숄더"
+              "values": [
+                "카라",
+                "브이넥",
+                "라운드넥",
+                "스퀘어넥",
+                "터틀넥/폴라",
+                "홀터넥",
+                "버튼",
+                "랩",
+                "벨트",
+                "로브",
+                "트임",
+                "포켓",
+                "뷔스티에",
+                "오프숄더"
+              ]
             },
-            { "key": "detail_can_choice_multiple", "value": "false" },
             {
               "key": "material",
-              "value": "면;폴리에스테르;데님;실크;가죽;니트;울;캐시미어;코듀로이;린넨;레이온;기모;기타"
+              "values": [
+                "면",
+                "폴리에스테르",
+                "데님",
+                "실크",
+                "가죽",
+                "니트",
+                "울",
+                "캐시미어",
+                "코듀로이",
+                "린넨",
+                "레이온",
+                "기모",
+                "기타"
+              ]
             },
-            { "key": "material_can_choice_multiple", "value": "false" },
             {
               "key": "pattern",
-              "value": "무지;체크;그래픽/레터링;플로랄;에스닉;도트;스트라이프;배색"
+              "values": [
+                "무지",
+                "체크",
+                "그래픽/레터링",
+                "플로랄",
+                "에스닉",
+                "도트",
+                "스트라이프",
+                "배색"
+              ]
             },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "긴팔;반팔;민소매" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+            { "key": "sleeve_length", "values": ["긴팔", "반팔", "민소매"] }
+          ]
         },
         "2105": {
           "name": "정장세트",
-          "children": [],
-          "asset_list": [
+          "attributes": [
             {
               "key": "material",
-              "value": "캐시미어;울;린넨;폴리에스테르;면;실크;레이온;가죽;코듀로이;기타"
+              "values": [
+                "캐시미어",
+                "울",
+                "린넨",
+                "폴리에스테르",
+                "면",
+                "실크",
+                "레이온",
+                "가죽",
+                "코듀로이",
+                "기타"
+              ]
             },
-            { "key": "material_can_choice_multiple", "value": "false" },
             {
               "key": "pattern",
-              "value": "무지;체크;그래픽/레터링;플로랄;에스닉;도트;스트라이프;배색"
-            },
-            { "key": "pattern_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+              "values": [
+                "무지",
+                "체크",
+                "그래픽/레터링",
+                "플로랄",
+                "에스닉",
+                "도트",
+                "스트라이프",
+                "배색"
+              ]
+            }
+          ]
         },
         "2106": {
           "name": "점프수트",
-          "children": [],
-          "asset_list": [
-            { "key": "length", "value": "미니;미디;롱" },
-            { "key": "length_can_choice_multiple", "value": "false" },
+          "attributes": [
+            { "key": "length", "values": ["미니", "미디", "롱"] },
             {
               "key": "material",
-              "value": "면;폴리에스테르;데님;실크;가죽;니트;울;캐시미어;코듀로이;린넨;레이온;기모;기타"
+              "values": [
+                "면",
+                "폴리에스테르",
+                "데님",
+                "실크",
+                "가죽",
+                "니트",
+                "울",
+                "캐시미어",
+                "코듀로이",
+                "린넨",
+                "레이온",
+                "기모",
+                "기타"
+              ]
             },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "긴팔;반팔;민소매" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+            { "key": "sleeve_length", "values": ["긴팔", "반팔", "민소매"] }
+          ]
         }
       }
     },
@@ -7147,25 +7375,7 @@
             }
           }
         },
-        "2200": {
-          "name": "기타",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "false" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "false" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "false" },
-            { "key": "length_can_choice_multiple", "value": "false" },
-            { "key": "material", "value": "false" },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "false" },
-            { "key": "pattern_can_choice_multiple", "value": "flase" },
-            { "key": "sleeve_length", "value": "false" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
-        }
+        "2200": { "name": "기타", "attributes": [] }
       }
     },
     "2081": {
@@ -7370,73 +7580,66 @@
         },
         "2225": {
           "name": "지갑",
-          "children": [],
-          "asset_list": [
+          "attributes": [
             {
               "key": "detail",
-              "value": "패턴;그래픽/레터링;버튼;지퍼;테슬;동전지갑;키링"
+              "values": [
+                "패턴",
+                "그래픽/레터링",
+                "버튼",
+                "지퍼",
+                "테슬",
+                "동전지갑",
+                "키링"
+              ]
             },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "false" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
             {
               "key": "length",
-              "value": "반지갑;장지갑;동전지갑;카드지갑;여권지갑;머니클립"
+              "values": [
+                "반지갑",
+                "장지갑",
+                "동전지갑",
+                "카드지갑",
+                "여권지갑",
+                "머니클립"
+              ]
             },
-            { "key": "length_can_choice_multiple", "value": "false" },
             {
               "key": "material",
-              "value": "가죽;스웨이드;면/캔버스;린넨;에나멜;합성피혁;기타"
-            },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "false" },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "false" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+              "values": [
+                "가죽",
+                "스웨이드",
+                "면/캔버스",
+                "린넨",
+                "에나멜",
+                "합성피혁",
+                "기타"
+              ]
+            }
+          ]
         },
         "2226": {
           "name": "파우치",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "스퀘어;라운드;지퍼;버튼;키링" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "false" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "false" },
-            { "key": "length_can_choice_multiple", "value": "false" },
+          "attributes": [
+            {
+              "key": "detail",
+              "values": ["스퀘어", "라운드", "지퍼", "버튼", "키링"]
+            },
             {
               "key": "material",
-              "value": "가죽;스웨이드;면/캔버스;린넨;에나멜;합성피혁;기타"
-            },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "false" },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "false" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+              "values": [
+                "가죽",
+                "스웨이드",
+                "면/캔버스",
+                "린넨",
+                "에나멜",
+                "합성피혁",
+                "기타"
+              ]
+            }
+          ]
         },
-        "2227": {
-          "name": "기타",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "false" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "false" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "false" },
-            { "key": "length_can_choice_multiple", "value": "false" },
-            { "key": "material", "value": "false" },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "false" },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "false" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
-        }
+        "2227": { "name": "기타", "attributes": [] }
       }
     },
     "2082": {
@@ -7526,83 +7729,33 @@
         },
         "2236": {
           "name": "벨트",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "false" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "false" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "버클 작은;버클 큰;얇은 줄;굵은 줄" },
-            { "key": "length_can_choice_multiple", "value": "false" },
-            { "key": "material", "value": "가죽;면;기타" },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "false" },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "false" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+          "attributes": [
+            {
+              "key": "length",
+              "values": ["버클 작은", "버클 큰", "얇은 줄", "굵은 줄"]
+            },
+            { "key": "material", "values": ["가죽", "면", "기타"] }
+          ]
         },
-        "2237": {
-          "name": "선글라스",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "false" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "false" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "false" },
-            { "key": "length_can_choice_multiple", "value": "false" },
-            { "key": "material", "value": "false" },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "false" },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "false" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
-        },
+        "2237": { "name": "선글라스", "attributes": [] },
         "2238": {
           "name": "장갑",
-          "children": [],
-          "asset_list": [
+          "attributes": [
             {
               "key": "detail",
-              "value": "벙어리;주얼리;버튼;벨트;리본;스마트터치"
+              "values": [
+                "벙어리",
+                "주얼리",
+                "버튼",
+                "벨트",
+                "리본",
+                "스마트터치"
+              ]
             },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "false" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "false" },
-            { "key": "length_can_choice_multiple", "value": "false" },
-            { "key": "material", "value": "가죽;니트;털/퍼" },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "false" },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "false" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
+            { "key": "material", "values": ["가죽", "니트", "털/퍼"] }
+          ]
         },
-        "2239": {
-          "name": "기타",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "false" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "false" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "false" },
-            { "key": "length_can_choice_multiple", "value": "false" },
-            { "key": "material", "value": "false" },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "false" },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "false" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
-        }
+        "2239": { "name": "기타", "attributes": [] }
       }
     },
     "2083": {
@@ -7745,25 +7898,7 @@
             }
           }
         },
-        "2253": {
-          "name": "기타",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "false" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "false" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "false" },
-            { "key": "length_can_choice_multiple", "value": "false" },
-            { "key": "material", "value": "false" },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "false" },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "false" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
-        }
+        "2253": { "name": "기타", "attributes": [] }
       }
     },
     "2084": {
@@ -7850,25 +7985,7 @@
             }
           }
         },
-        "2261": {
-          "name": "캐미솔/슬립",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "false" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "false" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "false" },
-            { "key": "length_can_choice_multiple", "value": "false" },
-            { "key": "material", "value": "false" },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "false" },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "false" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
-        },
+        "2261": { "name": "캐미솔/슬립", "attributes": [] },
         "2262": {
           "name": "파자마/홈웨어",
           "subcategories": {
@@ -7974,25 +8091,7 @@
             }
           }
         },
-        "2264": {
-          "name": "기타",
-          "children": [],
-          "asset_list": [
-            { "key": "detail", "value": "false" },
-            { "key": "detail_can_choice_multiple", "value": "false" },
-            { "key": "fit", "value": "false" },
-            { "key": "fit_can_choice_multiple", "value": "false" },
-            { "key": "length", "value": "false" },
-            { "key": "length_can_choice_multiple", "value": "false" },
-            { "key": "material", "value": "false" },
-            { "key": "material_can_choice_multiple", "value": "false" },
-            { "key": "pattern", "value": "false" },
-            { "key": "pattern_can_choice_multiple", "value": "false" },
-            { "key": "sleeve_length", "value": "false" },
-            { "key": "sleeve_length_can_choice_multiple", "value": "false" }
-          ],
-          "subcategories": {}
-        }
+        "2264": { "name": "기타", "attributes": [] }
       }
     }
   }

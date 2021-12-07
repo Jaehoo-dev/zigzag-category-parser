@@ -10,9 +10,10 @@ delete root.id;
 delete root.name;
 
 function parseRawData(root, depth = 0) {
-  if (!root.children) {
+  if (root.asset_list?.length || !root.children) {
     root.attributes = root.asset_list && cleanUpAssetList(root.asset_list);
 
+    delete root.children;
     delete root.asset_list;
 
     return;
