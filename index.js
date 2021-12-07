@@ -9,7 +9,46 @@ const {
 delete root.id;
 delete root.name;
 
-function cleanUpData() {}
+function parseRawData(root, depth = 0) {
+  if (!root.children) {
+    root.attributes = root.asset_list && cleanUpAssetList(root.asset_list);
+
+    delete root.asset_list;
+
+    return;
+  }
+
+  root.subcategories = parseChildrenToTree(root.children);
+
+  for (const id in root.subcategories) {
+    const category = root.subcategories[id];
+
+    parseRawData(category, depth + 1);
+
+    if (depth) {
+      delete root.children;
+    }
+  }
+
+  return root;
+}
+
+function parseChildrenToTree(children) {
+  const result = {};
+
+  children.forEach(child => {
+    result[child.id] = {
+      name: child.name,
+      children: child.children,
+    };
+
+    if (child.asset_list.length) {
+      result[child.id].asset_list = child.asset_list;
+    }
+  });
+
+  return result;
+}
 
 function cleanUpAssetList(assets) {
   const filtered = assets.filter(
@@ -22,6 +61,6 @@ function cleanUpAssetList(assets) {
   }));
 }
 
-const newCategoryData = JSON.stringify(root);
+const newCategoryData = JSON.stringify(parseRawData(root));
 
 fs.writeFileSync('output.json', newCategoryData);
