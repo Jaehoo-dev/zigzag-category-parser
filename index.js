@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const rawJsonData = fs.readFileSync('zigzag-categories.json');
+const rawJsonData = fs.readFileSync('zigzag-category-data-op.json');
 const rawCategoryData = JSON.parse(rawJsonData.toString());
 const {
   data: { category: root },
@@ -9,8 +9,8 @@ const {
 delete root.id;
 delete root.name;
 
-function parseRawData(root, depth = 0) {
-  if (root.asset_list?.length || !root.children) {
+function parseRawData(root) {
+  if (!root.children || !root.children.length) {
     root.attributes = root.asset_list && cleanUpAssetList(root.asset_list);
 
     delete root.children;
@@ -19,16 +19,14 @@ function parseRawData(root, depth = 0) {
     return;
   }
 
-  root.subcategories = parseChildrenToTree(root.children);
+  delete root.asset_list;
 
-  for (const id in root.subcategories) {
-    const category = root.subcategories[id];
+  root.categoryTree = parseChildrenToTree(root.children);
 
-    parseRawData(category, depth + 1);
+  for (const id in root.categoryTree) {
+    const category = root.categoryTree[id];
 
-    if (depth) {
-      delete root.children;
-    }
+    parseRawData(category);
   }
 
   return root;
@@ -51,10 +49,17 @@ function parseChildrenToTree(children) {
   return result;
 }
 
+const assetKeys = [
+  'length',
+  'fit',
+  'detail',
+  'material',
+  'pattern',
+  'sleeve_length',
+];
+
 function cleanUpAssetList(assets) {
-  const filtered = assets.filter(
-    asset => asset.value !== 'false' && asset.value !== 'flase'
-  );
+  const filtered = assets.filter(asset => assetKeys.indexOf(asset.key) > -1);
 
   return filtered.map(attribute => ({
     key: attribute.key,
@@ -62,6 +67,30 @@ function cleanUpAssetList(assets) {
   }));
 }
 
-const newCategoryData = JSON.stringify(parseRawData(root));
+function cleanUpTree(tree) {
+  if (!tree.categoryTree) return;
 
-fs.writeFileSync('output.json', newCategoryData);
+  for (const id in tree.categoryTree) {
+    const category = tree.categoryTree[id];
+
+    if (!category.children) continue;
+
+    category.children.forEach(child => {
+      delete child.children;
+      delete child.asset_list;
+    });
+
+    cleanUpTree(category);
+  }
+
+  return tree;
+}
+
+const result = cleanUpTree(parseRawData(root));
+
+result.children = result.children.map(child => ({
+  id: child.id,
+  name: child.name,
+}));
+
+fs.writeFileSync('output.json', JSON.stringify(result));
